@@ -1,0 +1,37 @@
+sipcrack (0.2-3) unstable; urgency=medium
+
+  * New maintainer upload. (Closes: #881376)
+    Thanks Sebastian.
+  * Bumped DH level to 10.
+  * Created the debian/install file.
+  * Created the debian/sipcrack.lintian-overrides file.
+  * debian/control:
+      - Bumped Standards-Version to 4.2.0.
+      - Changed Priority to optional.
+      - Updated Build-Depends.
+      - Updated Depends.
+      - Updated the maintainer.
+  * debian/copyright:
+      - Updated to format standard machine-readable.
+      - Updated file.
+  * debian/patches:
+      - Created the fix_makefile.patch file to enable hardening.
+  * debian/rules:
+      - Updated to small format.
+  * Removed the debian/docs and debian/dirs files.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Tue, 21 Aug 2018 00:39:31 +0000
+
+sipcrack (0.2-2) unstable; urgency=low
+
+  * debian/control:
+   - Fixed bullet list in description (Closes: #480349)
+
+ -- Sebastian Castillo Builes <castillobuiles@gmail.com>  Fri, 09 May 2008 11:20:10 -0500
+
+sipcrack (0.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #478302)
+  
+ -- Sebastian Castillo Builes <castillobuiles@gmail.com>  Sat, 26 Apr 2008 17:56:05 -0500
+

@@ -1,0 +1,14 @@
+Description: Added the hardening flags
+Author: Marcio de Souza Oliveira <m.desouza20@gmail.com>
+Last-Update: 2018-08-21
+Index: sipcrack-0.2/Makefile
+===================================================================
+--- sipcrack-0.2.orig/Makefile
++++ sipcrack-0.2/Makefile
+@@ -1,5 +1,5 @@
+ CC 		= gcc
+-FLAGS 		= -O2 #-DDEBUG -g -Wall -pedantic
++FLAGS 		= -O2 ${CFLAGS} ${CPPFLAGS} ${LDFLAGS} #-DDEBUG -g -Wall -pedantic
+ LIBS		= 
+ LIBSSL		= -lcrypto
+ LIBPCAP		= -lpcap
