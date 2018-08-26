@@ -1,0 +1,16 @@
+Description: Fixes spelling errors
+Author: Marcio de Souza Oliveira <m.desouza20@gmail.com>
+Last-Update: 2018-08-25
+Index: sipcrack-0.2/SIPdump.c
+===================================================================
+--- sipcrack-0.2.orig/SIPdump.c
++++ sipcrack-0.2/SIPdump.c
+@@ -691,7 +691,7 @@ static void manual_mode()
+ 
+   /* Get algorithm */
+ 
+-  get_string_input(login.algorithm, sizeof(login.algorithm), "* Enter algoritm   : ");
++  get_string_input(login.algorithm, sizeof(login.algorithm), "* Enter algorithm   : ");
+   Toupper(login.algorithm, strlen(login.algorithm));
+ 
+   /* Get response hash */

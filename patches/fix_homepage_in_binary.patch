@@ -1,0 +1,29 @@
+Description: Removes the homepage link
+Author: Marcio de Souza Oliveira <m.desouza20@gmail.com>
+Last-Update: 2018-08-25
+Index: sipcrack-0.2/SIPcrack.c
+===================================================================
+--- sipcrack-0.2.orig/SIPcrack.c
++++ sipcrack-0.2/SIPcrack.c
+@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
+ 
+   memset(&login_info, 0, sizeof(login_info));
+ 
+-  printf("\nSIPcrack %s  ( MaJoMu | www.codito.de ) \n"  \
++  printf("\nSIPcrack %s \n"  \
+          "----------------------------------------\n\n", VERSION);
+ 
+   /* Parse command line */
+Index: sipcrack-0.2/SIPdump.c
+===================================================================
+--- sipcrack-0.2.orig/SIPdump.c
++++ sipcrack-0.2/SIPdump.c
+@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
+ 
+   memset(&fp, 0, sizeof(struct bpf_program));
+ 
+-  printf("\nSIPdump %s  ( MaJoMu | www.codito.de ) \n"  \
++  printf("\nSIPdump %s \n"  \
+          "---------------------------------------\n\n", VERSION);
+ 
+   /* Parse command line */

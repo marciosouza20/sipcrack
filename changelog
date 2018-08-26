@@ -2,12 +2,14 @@ sipcrack (0.2-3) unstable; urgency=medium
 
   * New maintainer upload. (Closes: #881376)
     Thanks Sebastian.
-  * Bumped DH level to 10.
+  * Bumped DH level to 11.
   * Created the debian/install file.
   * Created the debian/sipcrack.lintian-overrides file.
   * debian/control:
+      - Added the Vcs-* fields.
       - Bumped Standards-Version to 4.2.0.
       - Changed Priority to optional.
+      - Fixed the position of Homepage field.
       - Updated Build-Depends.
       - Updated Depends.
       - Updated the maintainer.
@@ -15,7 +17,9 @@ sipcrack (0.2-3) unstable; urgency=medium
       - Updated to format standard machine-readable.
       - Updated file.
   * debian/patches:
+      - Created the fix_homepage_in_binary.patch.
       - Created the fix_makefile.patch file to enable hardening.
+      - Created the fix_spelling.patch.
   * debian/rules:
       - Updated to small format.
   * Removed the debian/docs and debian/dirs files.
